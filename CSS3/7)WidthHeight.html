@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width Height Max-Width </title>
+
+    <style>
+        div#box-1{
+
+            width:100px;
+            height:100px;
+            background: #a7a7a7;
+        }
+        
+        div#box-2{ /* box2, box1'in parenti oldugu icin box1'in 50%sini kaplar.*/
+            width:50%; /* bu sekilde de %'li verebiliriz. */
+            height:50px;
+            background:green;
+        }
+
+        div#box-3{
+            max-width:700px; /* sayfanin kisalip genislemesine gore max 700px deger alir.700'den sonrasi bos  */
+            height:100px;
+            background:red;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="box-1">
+        <div id="box-2"></div>
+    </div>
+    
+    <div id="box-3"></div>    
+</body>
+</html>
