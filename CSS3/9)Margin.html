@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Margin</title>
+
+    <style>
+        *{
+            margin:0; /*hicbir margin birakmasin */
+            padding:0; 
+        }
+
+        div.box-1{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background : #a7a7a7;
+            width: 500px;
+        }
+
+        div.box-2{ /*yukaridaki gibi tek tek yerine tek satirda yazalim
+                    top,right,bottom,left seklinde */ 
+            margin : 50px 20px 10px 5px;
+        }
+
+        div.box-3{ /*top-bottom,right-left ayniysa */
+            margin : 50px 20px;
+        }
+
+        div.box-4{/* sagdan ve soldan tam ortaya auto ile gelir. */
+            margin-left: auto;
+            margin-right: auto;
+            background: #a7a7a7;
+            width: 50%;
+        }
+
+        div.box-5{ /*margini ust ve alttan 0, sol ve sagdan ortala */
+            background : #a7a7a7;
+            width:50%;
+            margin : 0 auto; 
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="box-1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, iusto.
+    </div>
+    <div class="box-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione mollitia molestias.
+    </div>
+    <div class="box-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ab similique nisi repellendus in unde voluptatem neque adipisci quam corrupti.
+    </div>
+    <div class="box-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="box-5">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores vel accusamus beatae commodi reiciendis, ab cum illo minus, atque voluptates possimus totam.
+    </div>
+</body>
+</html> 
