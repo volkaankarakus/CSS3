@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Texts</title>
+
+    <style>
+        h1{
+            background: seagreen;
+        }
+
+        .heading-1{
+            text-align: center; /* text'i ortala */
+            text-transform: uppercase;
+        }
+
+        .heading-2{
+            text-align: right; 
+        }
+
+        div{
+            width:400px;
+            height:400px;
+            border:1px solid black;
+            text-align: center;
+        }
+
+        p{ /* letter-spacing ile harflerin arasini acabilirim*/
+            letter-spacing: 1px;
+        }
+
+        span{
+            text-decoration: underline; /* overline : ust cizgi, 
+                                           line-through:üstücizik*/
+        }
+
+        a{ /* a'daki linkin alti cizgili olmasin*/
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 class ="heading-1">Baslik 1</h1>    
+    <h1 class ="heading-2">Baslik 2</h1>    
+    <h1 class ="heading-3">Baslik 3</h1> 
+    
+    <div>
+        <h2>Article 1</h2>
+        <p>
+            Lorem ipsum dolor sit amet <span>consectetur</span>, adipisicing elit. <a href="#">Pariatur</a>, blanditiis vitae? Delectus explicabo provident error sit temporibus pariatur doloremque neque.
+        </p>
+    </div>
+
+</body>
+</html>
