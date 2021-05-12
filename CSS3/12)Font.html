@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Fonts</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        /* f12 yapip daha sonra computed'tan font-family yazdigimizda: 
+           tarayicimizin atadigi font gozukur. Bu fontu biz kendimiz atayabiliriz
+           w3schools'tan CSS Fontslara bak: 
+           */
+
+        h1{
+            font-family:Arial, Helvetica, sans-serif; /* GoogleFonts'a bak.*/
+            font-size: 1.5rem; /*font-size default degerine bak 16px. Bunun 1.5 kati */
+        }
+
+        /* html default font-size'ini ayarlayalim*/
+        html{
+            font-size:10px;
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 24px;
+            line-height: 1.5em; /* iki satir araligi. em : fonst-size */
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        div{
+            width: 400px;
+            height:400px;
+            border:1px solid black;
+        }
+
+        div span{
+            font-size: 50%;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Baslik 1</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus cum illum debitis fugit. Hic?
+    </p>    
+
+    <div>
+        <p>
+            Lorem ipsum, dolor sit amet <span>consectetur adipisicing</span> elit. Cumque minima laboriosam accusamus? Animi doloremque omnis eius. Eveniet at saepe voluptate?
+        </p>
+    </div>
+</body>
+</html>
