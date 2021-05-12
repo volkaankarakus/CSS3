@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class(State)</title>
+    <style>
+        a{
+            font-size:24px;
+        }
+
+        a:link{ /* tiklanmadan once*/
+            color :yellow;
+        }
+
+        a:hover{ /* uzerine gelindiginde */
+            color :red;
+        }
+
+        a:visited{ /* tiklandiginda */
+            color :black;
+        }
+
+        a:active{ /* tiklarken */
+            color:tomato;
+        }
+
+        input{
+            font-size:1.5em;
+            padding:10px;
+            border-radius: 4px; /*  koseleri ovallestirme*/
+            border : 1px solid black;
+        }
+
+        input:focus{ /* input'a tiklandiginda */
+            outline: 0; /* basildiginda kenarlar kalinlasmasin */
+            border: 2px solid brown;
+        }
+    </style>
+</head>
+
+
+<body>
+    <a href="#">Link</a> 
+    <input type="text" placeholder="Name">   
+</body>
+</html>
