@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Overflow</title>
+    <style>
+
+        div#box-1{
+            width:300px; /* height vermedigim icin paragrafi otomatik sigdirdi */ 
+            border: 1px solid black;
+            background: #f2f2f2;
+        }
+
+        div#box-2{
+            width:300px;
+            height:100px;
+            border:1px solid black;
+            background:coral;
+            overflow: hidden; /* taşmadaki kisimlari gizler. */
+
+        }
+
+        div#box-3{
+            width:300px;
+            height:100px;
+            border:1px solid black;
+            background:goldenrod;
+            overflow: auto; 
+        }
+
+        div#box-4{
+            width:600px;
+            height:200px;
+            border:1px solid black;
+            background:goldenrod;
+            overflow: scroll;  /* scroll'da sigsa da yine de kaydirma secenegi cikarir.*/
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="box-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fugiat libero delectus modi error ducimus porro illum facere tempora, 
+        suscipit ut accusantium sapiente quasi neque incidunt quam 
+        accusamus excepturi repellat tenetur mollitia asperiores quae 
+        aperiam fugit dolore nam. Dolorem blanditiis sint consectetur 
+        repellendus, reprehenderit vel quae laborum iusto laudantium debitis, 
+        officiis nesciunt exercitationem voluptate perspiciatis sapiente 
+        modi cum? Perferendis eveniet exercitationem ea vel. Enim autem 
+        placeat eveniet eaque exercitationem, voluptate repellat. 
+        Obcaecati, maxime ducimus? Alias a, similique sed illo veniam 
+        dolorem quos sit ipsum, ut assumenda aperiam minus maiores? 
+        Vero tempore est ducimus inventore consequatur libero, 
+        officia sequi sed eaque esse fugiat cumque asperiores assumenda 
+        placeat recusandae. Ipsam veritatis rerum nostrum non laborum sit nam. 
+        Aperiam mollitia alias blanditiis deserunt voluptate dolorum. 
+        Perferendis obcaecati cupiditate exercitationem modi! Expedita qui, 
+        quas molestias consequatur odit autem deleniti sint repudiandae omnis 
+        reprehenderit praesentium eius facilis, officia exercitationem 
+        sequi nemo? Sapiente inventore veritatis recusandae eos!
+    </div>  
+    
+    <div id="box-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Optio animi quo molestiae sit nesciunt fugiat ratione tempore 
+        consectetur corrupti odio? Odit dicta, distinctio, fugiat 
+        aliquid quia obcaecati consequatur nisi sapiente dolorum 
+        voluptatem sint nulla possimus, deserunt at praesentium. 
+        Non, rerum?
+    </div>
+
+    <div id="box-3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Rem deleniti laudantium, expedita consectetur quaerat ipsum 
+        saepe totam soluta nam, adipisci voluptatum voluptatibus tempore 
+        libero ullam nesciunt aut odio ea at magnam illum id! 
+        Deserunt cum nobis soluta unde aut perferendis ea vero voluptas 
+        cupiditate quis exercitationem iusto aliquid, totam ipsa!
+    </div>
+
+    <div id="box-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit quas, id repudiandae neque fugit accusamus sapiente consectetur eligendi impedit dicta quis nisi aperiam accusantium vitae repellendus odit, quo voluptatem totam illo, quaerat inventore? Alias, libero eveniet eligendi sint quia modi doloremque! Adipisci quo sint doloribus asperiores nemo in tempore atque commodi obcaecati velit natus est, neque deleniti numquam facere porro aliquam itaque facilis vitae enim perferendis nam voluptas eos.
+    </div>
+</body>
+</html>
