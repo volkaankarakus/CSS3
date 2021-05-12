@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseudo Element</title>
+    <style>
+        .para1{
+            font-size:1.5em; /* default font-size 16px olduguna gore 24px oldu.*/
+            letter-spacing:1px;
+            line-height:1.5em;
+        }
+
+        .para1::first-line{ /* ilk satir*/
+            color: red;
+        }
+
+        .para1::first-letter{
+            color:brown;
+            font-size:50px;
+        }
+
+        .para1::after{ /* paragraf1'in sonuna ekleme yapabiliriz.*/
+            content:"Paragraf Sonrasi";
+        }
+
+        .para1::before{
+            content:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMMJElhcrDhT4wIpy-Q6likkUyWzUW7Dvfw&usqp=CAU)
+        }
+    </style>
+</head>
+
+
+<body>
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita quae voluptas illo quasi facere. Perspiciatis a numquam quibusdam earum nesciunt quis sed inventore quasi maiores, debitis commodi nulla corporis error blanditiis possimus corrupti nisi incidunt adipisci explicabo aliquid. Suscipit eum sapiente voluptatum aspernatur corporis ducimus, eligendi excepturi culpa inventore odio voluptates, rem minima porro cum error assumenda eaque, totam eos facere. Rerum itaque porro quos hic a necessitatibus corporis exercitationem nihil iste quas ea sint, alias officiis illo odit voluptates! Esse quaerat est magni qui aperiam expedita perspiciatis, non ea, sint, iusto ullam? Accusamus nulla distinctio aut iure dicta?
+    </p>    
+</body>
+</html>
