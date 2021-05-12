@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-th Child Selector</title>
+    <style>
+        p{
+            font-size:1.5em;
+        }
+
+        p:first-child{
+            background:chartreuse;
+        }
+        p:nth-child(1){
+            color:red;
+        }
+
+        p:nth-child(3){
+            color:blue;
+        }
+
+        p:nth-child(even){ /* cift child'lar*/
+            color:yellow; 
+        }
+
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+
+        ul li:nth-child(2n){ /* an + b : 0,2,4,6..    n:0,b:0 default */
+            color:red;
+        }
+        ul li:nth-child(2n+1){
+            color:chartreuse ;
+        }
+
+        /* 4. cocuktan itibaren hepsi deseydi : n+4 yapardim. */
+    </style>
+</head>
+
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquam nostrum error illum explicabo! Impedit magnam minima eius excepturi sit.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptate.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum soluta dolore aspernatur modi qui dolor voluptatem autem illo. Ex fugit at exercitationem laudantium officiis qui, adipisci iure vel facilis corporis?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sequi, eveniet placeat accusantium optio delectus molestiae perspiciatis ut.
+    </p>
+
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+</body>
+</html>
