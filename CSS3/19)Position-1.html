@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        .fixed-topbar{
+            width:50%;
+            padding:20px;
+            background-color: black;
+            color:white;
+            text-align: center;
+            position:fixed; /* scroll kaysa da udemy yazisi sabit kalicak.*/
+            bottom:0; /* asagiya alalim. */
+        }
+
+        .red{
+            width:100px;
+            height:100px;
+            background-color: red;
+            position: relative; /* position:relative ile bulundugu yeri baz al*/
+            top:10px;  /* ve toptan 10px asagi git. */
+            left:10px;
+            z-index: 1; /* kutularda carpısma var. mavi olan kirmizinin onunde
+                           ben red'in z indexini 1 yaparsam o onde gozukur.
+                           baska bir kutuya z-index:2 atasaydim o en onde 
+                           gozukurdu. */
+        }
+
+        .blue{
+            width:100px;
+            height:100px;
+            background-color:blue;
+            position: relative;
+            left:20px;
+        }
+
+        
+    </style>
+</head>
+
+
+<body style="height:1000px"> <!-- sag tarafta scroll cikmasi icin bunu yaptik.-->
+    <div class="fixed-topbar">Udemy</div>
+    <div class="red"></div>
+    <div class="blue"></div>
+
+</body>
+</html>
