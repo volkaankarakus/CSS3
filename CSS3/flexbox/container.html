@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Container</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+
+        .container {
+            width:75%;
+            margin:0 auto;
+            display:flex;
+            flex-direction:row; /* satirda hizala. default olarak da bu. */
+            min-height:600px; /* min 600px olsun, ama contentin tasarsa 600px'den yukari cikabilirsin */
+            background:black;
+            justify-content:flex-start; /* space-between: tablo-bosluk-tablo 
+                                              space-around: bosluk-tablo-bosluk diye gider
+                                              flex-start : sol ustten baslatir.
+                                              flext-end: sol alt
+                                               */
+            align-items: center; /* dikey duzleminde ortalar.
+                                    yatay duzlemde ortalama: justify-content:center
+                                     */
+            flex-wrap:wrap; /* ekrana sigmayinca boxlari daraltma, asagi gec */
+        }
+
+        .box{
+            text-align:center;
+            background: #f2f2f2;
+            width:200px;
+            border: 1px solid black;
+            margin : 10px;
+        }
+
+        .box-1{
+            background:red;
+            order:2; /* box siralama */
+            align-self: flex-end ; /* align-items ve justify-content ile siraladigimiz sekilde
+                            degil de bu box'i istedigim gibi koymak istiyorum. */
+            flex-grow: 1; /* toplam flex-grow 10. 1/10'luk yer kaplar. */
+        }
+
+        .box-2{
+            background:coral;
+            order:1;
+            flex-grow: 5; /* 5/10 */
+        }
+
+        .box-3{
+            background:crimson;
+            order:3;
+            flex-grow:4;/* 4/10 */
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Flex Container olusturalim -->
+    <div class="container">
+        <div class="box box-1">
+            <h1>Article 1</h1>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+    
+        <div class="box box-2">
+            <h1>Article 2</h1>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box box-3"> 
+            <h1>Article 3</h1>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box box-4">
+            <h1>Article 4</h1>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box box-5">
+            <h1>Article 5</h1>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box box-6">
+            <h1>Article 6</h1>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box box-7">
+            <h1>Article 7</h1>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+</body>
+</html>
