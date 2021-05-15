@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design & Media Queries</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            max-width:1100px;
+            margin:0 auto;
+            display:flex;  /* yanyana gelsin */
+        }
+
+        .box{
+            border:1px solid black;
+            background : #a7a7a7;
+            padding:10px;
+            width:25%; /* mobil,tablet,pc icin degisicegi icin oran vermek daha iyi. */
+        }
+
+        body{
+            background:red;
+        }
+
+        /* TABLET */
+        @media (max-width:768px) { /* parantezdekini if gibi dusun */
+            body{
+                background:blue;
+            }
+            
+            .box{
+                width:50%;
+            }
+        }
+        /* TELEFON */
+        @media (max-width:500px){
+            body{
+                background:green;
+            }
+            .box{
+                width:100%;
+            }
+        }
+        
+        p{
+            display:none;
+        }
+
+        @media(min-width:768px){
+            p{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, nobis!
+            </p>
+        </div>
+
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, delectus.
+            </p>
+        </div>
+
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, delectus!
+            </p>
+        </div>
+
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorem?
+            </p>
+        </div>
+    </div>
+   
+</body>
+</html>
