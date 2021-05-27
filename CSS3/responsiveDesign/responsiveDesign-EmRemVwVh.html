@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - CSS Units </title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+
+
+        div {
+            font-size: 1.5em; /*body 16px oldugu icin div 24px olucak. */
+            width: 40vw; /* tum genislik 100vw . */
+            height:10vh;
+            background: #a7a7a7;
+        }
+
+        p{
+            font-size: 1.5em; /* yukaridaki koddan dolayi div 24px oldugundan p de 36px olur.*/
+            padding:1.5em; /* paddingte em : kendi p'miz kac px'se ona gore 1.5 katini alir. yani 54px. */
+        }
+
+        html {
+            font-size:10px; /* yukaridaki p'ye 1.5rem dersem p:15px olur. */
+        }
+
+        .background {
+            background : url("./image.jpg") center center no-repeat;
+            background-size: cover;
+            height:100vh;
+            display: flex;
+            flex-direction: column; /* alt alta getirdik .*/
+            color: #fff;
+            align-items: center; /* flex-direction: column durumundayken yatayda hizalamak icin yaptik. */
+            padding: 10rem; 
+        }
+
+        h1{
+            margin-bottom: 1rem;
+            font-size:3rem;
+            letter-spacing: 1px; /* harf araligi verelim. */ 
+        }
+
+        @media(max-width:500px) { /* yani sadece telefonlarda gecerli olucak */
+            h1{
+               margin-bottom: 0.5rem; 
+               font-size:2rem;
+            }
+
+            p{
+                font-size:1rem;
+                display:none; /* telefonda p bolumundeki yazi gozukmesin. */
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- 
+        Responsive Units
+        em,rem,%,vw,vh
+        em: font-size'a gore orantilar.
+        rem: sadece html etiketinin font-size'ina goreydi.
+        vw: tarayicida gorulen yatayda butun alan.
+        vh: tarayicida gorulen dikeyde butun alan.
+
+    -->
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem explicabo iste accusamus dolores?
+        </p>
+    </div>
+    <div class="background">
+        <h1> Welcome to the Website.</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur eligendi iusto minus ipsum quos! Ipsa quisquam facilis dignissimos at explicabo?
+        </p>
+    </div>
+</body>
+</html>
