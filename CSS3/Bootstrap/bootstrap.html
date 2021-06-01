@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        .box{
+            height:200px;
+        }
+
+        div span {
+            display:inline-block; /* span kendi icinde inline oldugu icin bunu inline-block'a cevirmemiz gerekiyor ki width ve height verebilelim. */
+            width: 50px;
+            height:50px;
+            background:red;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container bg-danger">
+        <h1>Container</h1>
+    </div>
+
+    <div class="container">
+        <!-- Grid System 
+               Satiri Grid'e bolmek icin ilk basta satir(row) kullanicaz ve bu satir 12 esit parcaya bolunecek
+               classlarin sonuna "col" dedigimiz icin esit parcalara bolunuyo. 
+        -->
+        <div class="row">
+            <div class="box bg-danger col"></div>
+            <div class="box bg-primary col"></div>
+            <div class="box bg-success col"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Col'da oran da belirlenebilir. 4/12, 3/12, 5/12 gibi
+                  Toplam 12 parcaya bolecegi icin sonuncuya col-5 yerine sadece col da diyebilirdik.
+            -->
+            <div class="box bg-primary col-4"></div>
+            <div class="box bg-success col-3"></div>
+            <div class="box bg-dark col-5"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- col-sm
+                    small ekranlara kadar yanyana dizil,small ekranlarda 100% yap.
+                    getbootstrap.com -> container'dan ozelliklere bak.
+            -->
+            <div class="box bg-danger col-sm"></div>
+            <div class="box bg-primary col-sm"></div>
+            <div class="box bg-success col-sm"></div>
+        </div>
+    </div>
+
+    <!-- Alignment 
+            container kullanmadigimiz icin butun genisligi kapladik.
+            2/12,2/12/2/12 kullandigimiz icin kullanmadigimiz alanlari arka plan olarak row'da bg-dark yaptik.
+            -->
+    <div class="row bg-dark" style="height:600px;">
+        <div class="box bg-primary col-2"></div>
+        <div class="box bg-success col-2"></div>
+        <div class="box bg-dark col-2"></div>
+    </div>
+
+    <!-- box'lari justify-content-start'la default gibi sola yaslar.
+           justify-content-center dersek yatayda ortalar.
+           justify-content-between dersek  box-bosluk-box..  koyarak dizer.
+           justify-content-around dersek bosluk-box-bosluk.. koyarak dizer.
+
+        align-items-start dersek dikeyde default gibi yukaridan baslar.
+           align-items-center dersek dikeyde ortalar.  
+
+        getbootstrap.com'dan gridlere bak.
+    -->
+    <div class="row bg-light justify-content-end" style="height:300px;">
+        <div class="box bg-primary col-2"></div>
+        <div class="box bg-success col-2"></div>
+        <div class="box bg-secondary col-2"></div>
+    </div>
+
+
+    <!-- Bootstrap Flexbox -->
+    <div class="d-flex bg-dark justify-content-between align-items-center" style="height:600px; width:600px;">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Bootstrap Flexbox Dikey (sadece flex-column eklemek yeterli) -->
+    <div class="d-flex flex-column bg-dark justify-content-start align-items-center" style="height:600px; width:600px;">
+        <span></span>
+        <span class="align-self-start"></span>
+        <span></span>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" 
+            integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" 
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+            crossorigin="anonymous">
+    </script>
+</body>
+</html>
